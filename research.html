@@ -1,70 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research - Haeseong Park</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research - Haeseong Park</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div style="display: flex; justify-content: space-between; align-items: flex-end;">
-            <div>
-                <h1>Research</h1>
-            </div>
-            <div style="text-align: right;">
-                <p style="margin: 0; color: white;">Email: haeseong.park@colorado.edu</p>
-            </div>
+  <header>
+    <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+      <div>
+        <h1>Research</h1>
+      </div>
+      <div style="text-align: right;">
+        <p style="margin: 0; color: white;">Email: haeseong.park@colorado.edu</p>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="research.html">Research</a> |
+      <a href="cv.html">CV</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Research</h2>
+
+    <h3>Working Papers</h3>
+    <ul>
+      <li>
+        <h4>Who Bears the Cost of Staying Urban? Skill-Differentiated Migration Responses to Natural Disasters</h4>
+        <a href="#" onclick="toggleAbstract(this); return false;">Show Abstract</a>
+        <div class="abstract" style="display:none;">
+          <p>
+            This paper examines how natural disasters shape migration responses of low- and high-skilled
+            workers in the United States. Using within–commuting zone migration data linked with
+            disaster-driven monetary losses and skill-specific population growth, I find that a one percent
+            increase in four-year cumulative disaster damage growth raises out-migration by low-skilled
+            workers from metropolitan areas by 1.44 percentage points, while high-skilled inflows rise by
+            0.63 points. In contrast, neither group significantly responds to updated risk perceptions. The
+            results suggest that low-skilled populations disproportionately bear the costs of staying in
+            urban areas, and disasters accelerate skill-based spatial sorting, a trend already prominent
+            during the 2010s.
+          </p>
         </div>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="research.html">Research</a> |
-            <a href="cv.html">CV</a>
-        </nav>
-    </header>
+      </li>
+    </ul>
 
-    <section>
-        <h2>Research</h2>
-        <h3>Working Papers</h3>
-        <ul>
-            <li>
-                <h4>Who Bears the Cost of Staying Urban? Skill-Differentiated Migration Responses to Natural Disasters</h4>
-                <a href="javascript:void(0);" onclick="toggleAbstract()">Show Abstract</a>
-                <div id="abstract" style="display:none;">
-                    <p>This paper examines how natural disasters shape migration responses of low- and high-skilled workers in the United States. Using within–commuting zone migration data linked with disaster-driven monetary losses and skill-specific population growth, I find that a one percent increase in four-year cumulative disaster damage growth raises out-migration by low-skilled workers from metropolitan areas by 1.44 percentage points, while high-skilled inflows rise by 0.63 points. In contrast, neither group significantly responds to updated risk perceptions. The results suggest that low-skilled populations disproportionately bear the costs of staying in urban areas, and disasters accelerate skill-based spatial sorting, a trend already prominent during the 2010s.</p>
-                </div>
-            </li>
-        </ul>
-        
-        <hr> <!-- Line division after the Research heading -->
-        <h3>Works in Progress</h3>
-        <ul>
-            <li>
-                <h4>City-Level Spatial Distribution and Post-Disaster Mobility Recovery: Analyzing the Influence of Economic Activity Patterns</h4>
-                <a href="javascript:void(0);" onclick="toggleAbstract()">Show Abstract</a>
-                <div id="abstract" style="display:none;">
-                    <p>Driven by agglomeration forces, continuous urbanization has shaped the U.S. economy since the 1980s. Over the same period, natural disasters have grown more frequent and severe. This paper examines how key urban concentration features interact with disaster exposure. I find that a single natural disaster does not significantly disrupt short-run economic activity, but back-to-back disasters lead to measurable declines at the monthly level. Interaction effects vary by type: concentrated labor markets amplify negative impacts, centralized road networks enhance resilience, and greater trade dependence modestly buffers short-run shocks. These results underscore how the benefits of agglomeration can shift under climate stress.</p>
-                </div>
-            </li>
-        </ul>        
-    </section>
+    <hr>
 
-    <footer>
-        <p>&copy; 2025 Haeseong Park. All rights reserved.</p>
-    </footer>
+    <h3>Works in Progress</h3>
+    <ul>
+      <li>
+        <h4>City-Level Spatial Distribution and Post-Disaster Mobility Recovery: Analyzing the Influence of Economic Activity Patterns</h4>
+        <a href="#" onclick="toggleAbstract(this); return false;">Show Abstract</a>
+        <div class="abstract" style="display:none;">
+          <p>
+            Driven by agglomeration forces, continuous urbanization has shaped the U.S. economy since
+            the 1980s. Over the same period, natural disasters have grown more frequent and severe. This
+            paper examines how key urban concentration features interact with disaster exposure. I find
+            that a single natural disaster does not significantly disrupt short-run economic activity, but
+            back-to-back disasters lead to measurable declines at the monthly level. Interaction effects
+            vary by type: concentrated labor markets amplify negative impacts, centralized road networks
+            enhance resilience, and greater trade dependence modestly buffers short-run shocks. These
+            results underscore how the benefits of agglomeration can shift under climate stress.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </section>
 
-    <script>
-        function toggleAbstract() {
-            var abstract = document.getElementById("abstract");
-            var link = document.querySelector("a[onclick='toggleAbstract()']");
-            if (abstract.style.display === "none") {
-                abstract.style.display = "block";
-                link.textContent = "Hide Abstract";
-            } else {
-                abstract.style.display = "none";
-                link.textContent = "Show Abstract";
-            }
-        }
-    </script>
+  <footer>
+    <p>&copy; 2025 Haeseong Park. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleAbstract(link) {
+      const abstract = link.nextElementSibling; // find the next <div class="abstract">
+      const isHidden = abstract.style.display === "none";
+      abstract.style.display = isHidden ? "block" : "none";
+      link.textContent = isHidden ? "Hide Abstract" : "Show Abstract";
+    }
+  </script>
 </body>
 </html>
