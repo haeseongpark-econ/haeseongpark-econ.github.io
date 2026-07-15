@@ -162,19 +162,10 @@
                         <p class="paper-status">
                             Working Paper
                         </p>
-
-                        <a
-                            href="#"
-                            class="abstract-toggle"
-                            onclick="toggleAbstract(this); return false;"
-                        >
-                            Show Abstract
-                        </a>
-
-                        <div
-                            class="abstract"
-                            style="display: none;"
-                        >
+                        
+                        <p class="paper-status">Abstract</p>
+                        
+                        <div class="abstract">
 
                             <p>
                                 This paper examines how natural disasters shape
@@ -223,18 +214,6 @@
         </div>
 
     </footer>
-
-    <script>
-        function toggleAbstract(link) {
-            const abstract = link.nextElementSibling;
-            const isHidden = abstract.style.display === "none";
-
-            abstract.style.display = isHidden ? "block" : "none";
-            link.textContent = isHidden
-                ? "Hide Abstract"
-                : "Show Abstract";
-        }
-    </script>
 
 </body>
 
