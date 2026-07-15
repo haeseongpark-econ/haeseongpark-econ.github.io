@@ -1,64 +1,313 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haeseong Park</title>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Haeseong Park is a Ph.D. candidate in Economics at the University of Colorado Boulder. His research focuses on environmental economics, urban economics, natural disasters, and economic resilience."
+    >
+
+    <title>Haeseong Park | Economics</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <div style="display: flex; justify-content: space-between; align-items: flex-end;">
-            <div>
-                <h1>Haeseong Park</h1>
-            </div>
-            <div style="text-align: right;">
-                <p style="margin: 0; color: white;">Email: haeseong.park@colorado.edu</p>
-            </div>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <div class="header-container">
+
+            <a class="site-name" href="index.html">
+                Haeseong Park
+            </a>
+
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="#research">Research</a>
+                <a href="#teaching">Teaching</a>
+                <a href="#contact">Contact</a>
+
+                <!-- Replace this with the PDF path when your CV is uploaded -->
+                <a href="cv.html">CV</a>
+            </nav>
+
         </div>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="research.html">Research</a> |
-            <a href="cv.html">CV</a>
-        </nav>
     </header>
 
-    <section>
-        <h2>About</h2>
 
-        <div style="display: flex; align-items: flex-start;">
-            <!-- Adding your photo -->
-            <img src="HaeseongPark_240910.jpeg" alt="Haeseong Park" style="width:150px;height:auto; margin-right: 20px;">
+    <main>
 
-            <div>
-                <p> Hi! My name is Haeseong Park. I’m a PhD candidate in Economics at the University of Colorado, Boulder. </p>
-                <p> My current work research examines how natural disasters reshape economic geography across the U.S., from the way people move to how communities bounce back.</p>
-                <p> I will be on the 2026–27 academic job market. </p>
+        <!-- Main introduction -->
+        <section class="hero">
+
+            <div class="hero-container">
+
+                <div class="hero-text">
+
+                    <p class="eyebrow">
+                        Environmental and Urban Economics
+                    </p>
+
+                    <h1>
+                        Natural disasters, cities, and economic resilience.
+                    </h1>
+
+                    <p class="hero-description">
+                        I am a Ph.D. candidate in Economics at the University
+                        of Colorado Boulder. My research examines how natural
+                        disasters affect economic activity, migration, urban
+                        structure, and spatial inequality.
+                    </p>
+
+                    <p class="job-market-note">
+                        I will be on the 2026–2027 academic job market.
+                    </p>
+
+                    <div class="hero-links">
+
+                        <a class="button primary-button" href="#job-market-paper">
+                            Job Market Paper
+                        </a>
+
+                        <a class="button secondary-button" href="#research">
+                            Research
+                        </a>
+
+                        <!-- Replace cv.html with your PDF later -->
+                        <a class="button secondary-button" href="cv.html">
+                            CV
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-photo">
+
+                    <!-- This uses the current location of your image -->
+                    <img
+                        src="HaeseongPark_240910.jpeg"
+                        alt="Portrait of Haeseong Park"
+                    >
+
+                </div>
 
             </div>
+
+        </section>
+
+
+        <!-- Current focus -->
+        <section class="current-focus">
+
+            <div class="content-container">
+
+                <p class="section-label">
+                    Current Focus
+                </p>
+
+                <p class="focus-text">
+                    Studying how labor markets, transportation networks, and
+                    local trade linkages shape cities’ resilience to natural
+                    disasters.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Job market paper -->
+        <section id="job-market-paper" class="section">
+
+            <div class="content-container">
+
+                <p class="section-label">
+                    Job Market Paper
+                </p>
+
+                <h2>
+                    Agglomeration Beyond Productivity: Economic Organization
+                    and Resilience to Natural Disasters
+                </h2>
+
+                <p>
+                    This paper examines how differences in economic structure
+                    shape the short-run economic impacts of natural disasters
+                    on cities. Using wind strength to proxy disaster intensity
+                    and electricity consumption to measure economic activity,
+                    I show that natural disasters reduce aggregate economic
+                    activity at the metropolitan statistical area level.
+                </p>
+
+                <p>
+                    I find substantial heterogeneity across labor market
+                    concentration, transportation network centralization, and
+                    local trade linkages. Industry concentration amplifies
+                    disaster losses, whereas centralized road networks and
+                    greater internal goods sourcing improve resilience.
+                </p>
+
+                <div class="section-links">
+
+                    <!-- Keep this link until your PDF is ready -->
+                    <a href="research.html">
+                        Abstract and details
+                    </a>
+
+                    <!-- Later, replace the link above with:
+                    <a href="files/Park_JMP.pdf">Download paper</a>
+                    -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Research areas -->
+        <section id="research" class="section alternate-section">
+
+            <div class="content-container">
+
+                <p class="section-label">
+                    Research
+                </p>
+
+                <h2>
+                    Research Areas
+                </h2>
+
+                <div class="research-grid">
+
+                    <article class="research-card">
+
+                        <h3>
+                            Natural Disasters and Urban Resilience
+                        </h3>
+
+                        <p>
+                            Short-run economic activity, infrastructure,
+                            industry structure, and local supply chains.
+                        </p>
+
+                    </article>
+
+
+                    <article class="research-card">
+
+                        <h3>
+                            Migration and Spatial Inequality
+                        </h3>
+
+                        <p>
+                            Skill-differentiated migration, urban residency,
+                            and household responses to disaster exposure.
+                        </p>
+
+                    </article>
+
+
+                    <article class="research-card">
+
+                        <h3>
+                            Environmental and Urban Economics
+                        </h3>
+
+                        <p>
+                            Agglomeration, labor markets, economic geography,
+                            and adaptation to environmental risk.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Teaching -->
+        <section id="teaching" class="section">
+
+            <div class="content-container">
+
+                <p class="section-label">
+                    Teaching
+                </p>
+
+                <h2>
+                    Teaching Experience
+                </h2>
+
+                <p>
+                    I have served as instructor of record for Principles of
+                    Macroeconomics and Natural Resource Economics at the
+                    University of Colorado Boulder.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact -->
+        <section id="contact" class="section contact-section">
+
+            <div class="content-container">
+
+                <p class="section-label">
+                    Contact
+                </p>
+
+                <h2>
+                    Haeseong Park
+                </h2>
+
+                <p>
+                    Department of Economics<br>
+                    University of Colorado Boulder<br>
+                    Boulder, Colorado
+                </p>
+
+                <p>
+                    <a href="mailto:haeseong.park@colorado.edu">
+                        haeseong.park@colorado.edu
+                    </a>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="content-container">
+
+            <p>
+                &copy; 2026 Haeseong Park
+            </p>
+
         </div>
-       
-        <!-- Subsection -->
-        <hr> <!-- Line division after the About section -->
 
-        <h3>Research Interests</h3>
-        <h4>My research focuses on the following economic fields:</h4>
-        <ul>
-            <li>Environmental Economics</li>
-            <li>Labor Economics</li>
-            <li>Urban Economics</li>
-            <li>Economic Geography</li>
-        </ul>
-
-        <!-- Additional subsection if needed -->
-        <hr> <!-- Line division after the Research Interests section -->
-
-        <h3>News and Updates</h3>
-        <p></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Haeseong Park. All rights reserved.</p>
     </footer>
+
 </body>
+
 </html>
+```
