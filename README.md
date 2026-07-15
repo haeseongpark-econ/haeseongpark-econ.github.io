@@ -5,7 +5,7 @@ This repository contains the source code for my personal website, which showcase
 
 ## Usage
 
-You can visit my website by navigating to: `[https://haeseong.park.github.io](https://haeseongpark-econ.github.io/)`
+You can visit my website by navigating to: `https://haeseongpark-econ.github.io`
 
 ## Sections
 
