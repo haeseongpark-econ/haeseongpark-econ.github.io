@@ -14,8 +14,6 @@
         content="Haeseong Park is a Ph.D. candidate in Economics at the University of Colorado Boulder. His research focuses on environmental economics, urban economics, natural disasters, and economic resilience."
     >
 
-
-    
     <title>Haeseong Park | Economics</title>
 
     <style>
@@ -121,7 +119,6 @@
             min-width: 0;
         }
 
-        .eyebrow,
         .section-label {
             margin: 0 0 14px;
             color: var(--navy);
@@ -221,35 +218,18 @@
             box-shadow: 0 14px 35px rgba(0, 24, 72, 0.16);
         }
 
-        .current-focus {
-            padding: 34px 28px;
-            background-color: var(--dark-navy);
-            color: var(--white);
-        }
-
-        .current-focus .section-label {
-            color: #cbd7ef;
-        }
-
         .content-container {
             max-width: var(--max-width);
             margin: 0 auto;
         }
 
-        .focus-text {
-            max-width: 920px;
-            margin: 0;
-            font-size: 1.35rem;
-            line-height: 1.6;
-        }
-
         .section {
             padding: 72px 28px;
-            scroll-margin-top: 80px;
+            scroll-margin-top: 90px;
         }
 
         .section h2 {
-            max-width: 880px;
+            max-width: 900px;
             margin: 0 0 24px;
             color: var(--dark-navy);
             font-size: clamp(1.85rem, 3vw, 2.65rem);
@@ -257,45 +237,74 @@
         }
 
         .section p {
-            max-width: 880px;
+            max-width: 900px;
             font-size: 1.04rem;
-        }
-
-        .section-links {
-            margin-top: 25px;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: 700;
         }
 
         .alternate-section {
             background-color: var(--light-blue);
         }
 
-        .research-grid {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 22px;
+        .paper-status {
+            margin: 0 0 12px;
+            color: var(--navy);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.88rem;
+            font-weight: 700;
+        }
+
+        .paper-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+        }
+
+        .paper-links a {
+            display: inline-block;
+        }
+
+        .working-papers-list {
+            max-width: 920px;
             margin-top: 34px;
         }
 
-        .research-card {
-            padding: 28px;
-            background-color: var(--white);
-            border: 1px solid var(--border);
-            border-radius: 4px;
+        .working-paper {
+            padding: 30px 0;
+            border-top: 1px solid var(--border);
         }
 
-        .research-card h3 {
-            margin: 0 0 14px;
+        .working-paper:first-child {
+            padding-top: 0;
+            border-top: 0;
+        }
+
+        .working-paper:last-child {
+            padding-bottom: 0;
+        }
+
+        .working-paper h3 {
+            max-width: 860px;
+            margin: 0 0 10px;
             color: var(--dark-navy);
-            font-size: 1.3rem;
-            line-height: 1.35;
+            font-size: 1.4rem;
+            line-height: 1.4;
         }
 
-        .research-card p {
-            margin: 0;
+        .working-paper p {
+            margin: 0 0 12px;
             color: var(--muted-text);
-            font-size: 0.98rem;
+            font-size: 1rem;
+        }
+
+        .working-paper .paper-status {
+            color: var(--navy);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.85rem;
+            font-weight: 700;
         }
 
         .contact-section {
@@ -308,6 +317,10 @@
         }
 
         .contact-section h2 {
+            color: var(--white);
+        }
+
+        .contact-section p {
             color: var(--white);
         }
 
@@ -350,10 +363,6 @@
             .hero-photo img {
                 width: 210px;
                 max-width: 55vw;
-            }
-
-            .research-grid {
-                grid-template-columns: 1fr;
             }
         }
 
@@ -399,16 +408,19 @@
             .button {
                 text-align: center;
             }
+
+            .paper-links {
+                flex-direction: column;
+                gap: 10px;
+            }
         }
-
-
-        
     </style>
 </head>
 
 <body>
 
     <header class="site-header">
+
         <div class="header-container">
 
             <a class="site-name" href="index.html">
@@ -417,13 +429,14 @@
 
             <nav class="site-nav" aria-label="Main navigation">
                 <a href="index.html">Home</a>
-                <a href="#research">Research</a>
-                <a href="#teaching">Teaching</a>
-                <a href="#contact">Contact</a>
+                <a href="#job-market-paper">Job Market Paper</a>
+                <a href="#working-papers">Working Papers</a>
                 <a href="cv.html">CV</a>
+                <a href="#contact">Contact</a>
             </nav>
 
         </div>
+
     </header>
 
     <main>
@@ -439,12 +452,15 @@
                     </h1>
 
                     <p class="hero-description">
-                        I am a Ph.D. candidate in Economics at the University of Colorado Boulder.
-                        My research agenda lies at the intersection of environmental, urban, and labor economics.
-                        I study the interplay between natural disasters and economic geography,
-                        asking how urban agglomeration influences the economic consequences of disasters
-                        and how disasters reshape the spatial distribution of economic activity across the
-                        United States.
+                        I am a Ph.D. candidate in Economics at the University
+                        of Colorado Boulder. My research agenda lies at the
+                        intersection of environmental, urban, and labor
+                        economics. I study the interplay between natural
+                        disasters and economic geography, asking how urban
+                        agglomeration influences the economic consequences of
+                        disasters and how disasters reshape the spatial
+                        distribution of economic activity across the United
+                        States.
                     </p>
 
                     <p class="job-market-note">
@@ -462,9 +478,9 @@
 
                         <a
                             class="button secondary-button"
-                            href="#research"
+                            href="#working-papers"
                         >
-                            Research
+                            Working Papers
                         </a>
 
                         <a
@@ -504,6 +520,10 @@
                     and Resilience to Natural Disasters
                 </h2>
 
+                <p class="paper-status">
+                    Job Market Paper
+                </p>
+
                 <p>
                     This paper examines how differences in economic structure
                     shape the short-run economic impacts of natural disasters
@@ -523,14 +543,15 @@
                     them, with the latter reducing losses by nearly half.
                 </p>
 
-                <div class="section-links">
+                <div class="paper-links">
 
                     <a href="research.html">
                         Abstract and details
                     </a>
 
                     <!--
-                    When your paper is ready, replace the link above with:
+                    When the PDF is ready, remove the comment markers
+                    around the link below and update the filename.
 
                     <a href="files/Park_JMP.pdf">
                         Download paper
@@ -543,82 +564,91 @@
 
         </section>
 
-        <section id="research" class="section alternate-section">
+        <section
+            id="working-papers"
+            class="section alternate-section"
+        >
 
             <div class="content-container">
 
                 <p class="section-label">
-                    Research
+                    Working Papers
                 </p>
 
                 <h2>
-                    Research Areas
+                    Ongoing Research
                 </h2>
 
-                <div class="research-grid">
+                <div class="working-papers-list">
 
-                    <article class="research-card">
+                    <article class="working-paper">
 
                         <h3>
-                            Natural Disasters and Urban Resilience
+                            Skill-Differentiated Migration and Disaster
+                            Exposure
                         </h3>
 
-                        <p>
-                            Short-run economic activity, infrastructure,
-                            industry structure, and local supply chains.
+                        <p class="paper-status">
+                            Working Paper
                         </p>
+
+                        <p>
+                            This project studies how migration responses to
+                            natural-disaster exposure differ across education
+                            and skill groups, and how these responses affect
+                            the spatial distribution of households and economic
+                            activity.
+                        </p>
+
+                        <div class="paper-links">
+
+                            <a href="research.html">
+                                Abstract and details
+                            </a>
+
+                            <!--
+                            When the PDF is ready, remove the comment markers
+                            around the link below and update the filename.
+
+                            <a href="files/Park_Migration.pdf">
+                                Download paper
+                            </a>
+                            -->
+
+                        </div>
 
                     </article>
 
-                    <article class="research-card">
+                    <!--
+                    To add another working paper, copy the entire article
+                    block below and replace its title and description.
+
+                    <article class="working-paper">
 
                         <h3>
-                            Migration and Spatial Inequality
+                            Title of Another Working Paper
                         </h3>
 
-                        <p>
-                            Skill-differentiated migration, urban residency,
-                            and household responses to disaster exposure.
+                        <p class="paper-status">
+                            Working Paper
                         </p>
 
-                    </article>
-
-                    <article class="research-card">
-
-                        <h3>
-                            Environmental and Urban Economics
-                        </h3>
-
                         <p>
-                            Agglomeration, labor markets, economic geography,
-                            and adaptation to environmental risk.
+                            Add a short description of the paper here.
                         </p>
 
+                        <div class="paper-links">
+
+                            <a href="research.html">
+                                Abstract and details
+                            </a>
+
+                        </div>
+
                     </article>
+                    -->
 
                 </div>
-
-            </div>
-
-        </section>
-
-        <section id="teaching" class="section">
-
-            <div class="content-container">
-
-                <p class="section-label">
-                    Teaching
-                </p>
-
-                <h2>
-                    Teaching Experience
-                </h2>
-
-                <p>
-                    I have served as instructor of record for Principles of
-                    Macroeconomics and Natural Resource Economics at the
-                    University of Colorado Boulder.
-                </p>
 
             </div>
 
