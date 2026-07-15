@@ -57,10 +57,9 @@ a:focus {
     top: 0;
     z-index: 1000;
     width: 100%;
-
-    background-color: var(--navy);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
 .header-container {
@@ -146,7 +145,10 @@ main {
     border-radius: 8px;
     box-shadow: var(--shadow);
 
-    scroll-margin-top: 100px;
+    scroll-margin-top: 110px;
+}
+[id] {
+    scroll-margin-top: 110px;
 }
 
 .alternate-section {
