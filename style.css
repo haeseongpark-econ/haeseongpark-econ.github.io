@@ -2,7 +2,7 @@
 :root {
     --navy: #2c3e50;
     --dark-navy: #1f2d3a;
-    --light-background: #f4f6f8;
+    --light-background: #fafbfd;
     --white: #ffffff;
     --text: #222222;
     --muted-text: #5f6770;
@@ -389,12 +389,14 @@ main {
 }
 
 .abstract {
-    margin-top: 22px;
-    padding: 22px 24px;
-
-    background-color: var(--light-background);
-    border-left: 4px solid var(--navy);
+    margin-top: 18px;
+    padding: 18px 22px;
+    background: #f7f9fc;
+    border-left: 3px solid var(--navy);
     border-radius: 4px;
+
+    font-size: 0.94rem;
+    line-height: 1.65;
 }
 
 .abstract p:last-child {
